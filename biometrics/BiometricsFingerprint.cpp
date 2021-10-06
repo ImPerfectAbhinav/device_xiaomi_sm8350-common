@@ -18,7 +18,6 @@
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_vili"
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_vili"
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_vili"
-
 #include <hardware/hw_auth_token.h>
 
 #include "xiaomi_fingerprint.h"
@@ -393,7 +392,7 @@ Return<void> BiometricsFingerprint::onFingerUp() {
 } // namespace implementation
 }  // namespace V2_3
 } // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware

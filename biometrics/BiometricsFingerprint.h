@@ -15,43 +15,43 @@
  * limitations under the License.
  */
 
-<<<<<<< HEAD
 #ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
 #define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
-=======
 #ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
 #define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
->>>>>>> b0b8c743 (sm8350-common: Import AOSP fingerprint HIDL service)
+#ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
+#define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
 
 #include <log/log.h>
 #include <android/log.h>
 #include "xiaomi_fingerprint.h"
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-<<<<<<< HEAD
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
-=======
 #include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
->>>>>>> b0b8c743 (sm8350-common: Import AOSP fingerprint HIDL service)
+#include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
 #include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
 
 namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-<<<<<<< HEAD
 namespace V2_3 {
 namespace implementation {
 
 using ::android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
 using ::android::hardware::biometrics::fingerprint::V2_1::FingerprintAcquiredInfo;
 using ::android::hardware::biometrics::fingerprint::V2_1::FingerprintError;
-=======
 namespace V2_1 {
 namespace implementation {
 
 using ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
->>>>>>> b0b8c743 (sm8350-common: Import AOSP fingerprint HIDL service)
+namespace V2_3 {
+namespace implementation {
+
+using ::android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
+using ::android::hardware::biometrics::fingerprint::V2_1::FingerprintAcquiredInfo;
+using ::android::hardware::biometrics::fingerprint::V2_1::FingerprintError;
 using ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback;
 using ::android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
 using ::android::hardware::Return;
@@ -82,14 +82,11 @@ public:
     Return<RequestStatus> setActiveGroup(uint32_t gid, const hidl_string& storePath) override;
     Return<RequestStatus> authenticate(uint64_t operationId, uint32_t gid) override;
 
-<<<<<<< HEAD
     // Methods from ::android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint follow.
     Return<bool> isUdfps(uint32_t sensorId) override;
     Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
     Return<void> onFingerUp() override;
 
-=======
->>>>>>> b0b8c743 (sm8350-common: Import AOSP fingerprint HIDL service)
     // Methods from ::vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint follow.
     Return<int32_t> extCmd(int32_t cmd, int32_t param) override;
 
@@ -107,18 +104,15 @@ private:
 };
 
 }  // namespace implementation
-<<<<<<< HEAD
 }  // namespace V2_3
-=======
 }  // namespace V2_1
->>>>>>> b0b8c743 (sm8350-common: Import AOSP fingerprint HIDL service)
+}  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
 }  // namespace android
 
-<<<<<<< HEAD
 #endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
-=======
 #endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
->>>>>>> b0b8c743 (sm8350-common: Import AOSP fingerprint HIDL service)
+#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
+
