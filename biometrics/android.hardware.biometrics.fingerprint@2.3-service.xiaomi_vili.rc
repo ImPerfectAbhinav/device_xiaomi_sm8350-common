@@ -6,6 +6,7 @@ service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.
     user system
     group system drmrpc diag input uhid
     group system input uhid
+
 on init
     # Goodix fingerprint
     chmod 0666 /dev/goodix_fp
