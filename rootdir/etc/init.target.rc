@@ -109,6 +109,9 @@ on post-fs-data
     # Create folder of cameralog
     mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
 
+    # Create folder of cameralog
+    mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
+
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
 
