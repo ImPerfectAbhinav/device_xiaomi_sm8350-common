@@ -16,6 +16,8 @@
  */
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_vili"
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_vili"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_vili"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_vili"
 
 #include <hardware/hw_auth_token.h>
 
@@ -30,6 +32,7 @@ namespace hardware {
 namespace biometrics {
 namespace fingerprint {
 namespace V2_3 {
+namespace V2_1 {
 namespace implementation {
 
 // Supported fingerprint HAL version
@@ -389,6 +392,8 @@ Return<void> BiometricsFingerprint::onFingerUp() {
 
 } // namespace implementation
 }  // namespace V2_3
+} // namespace implementation
+}  // namespace V2_1
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware

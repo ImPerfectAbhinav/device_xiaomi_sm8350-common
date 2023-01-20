@@ -14,11 +14,16 @@
  * limitations under the License.
  */
 
+<<<<<<< HEAD
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_vili"
+=======
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_vili"
+>>>>>>> b0b8c743 (sm8350-common: Import AOSP fingerprint HIDL service)
 
 #include <android/log.h>
 #include <hidl/HidlSupport.h>
 #include <hidl/HidlTransportSupport.h>
+<<<<<<< HEAD
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
 #include <android/hardware/biometrics/fingerprint/2.2/types.h>
 #include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
@@ -26,6 +31,15 @@
 
 using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
 using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
+=======
+#include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
+#include <android/hardware/biometrics/fingerprint/2.1/types.h>
+#include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
+#include "BiometricsFingerprint.h"
+
+using android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
+using android::hardware::biometrics::fingerprint::V2_1::implementation::BiometricsFingerprint;
+>>>>>>> b0b8c743 (sm8350-common: Import AOSP fingerprint HIDL service)
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 using android::sp;
