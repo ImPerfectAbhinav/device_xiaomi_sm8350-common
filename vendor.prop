@@ -172,6 +172,9 @@ ro.crypto.volume.metadata.method=dm-default-key
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# DEX
+persist.sys.dalvik.multithread=true
+
 # Display
 debug.sf.latch_unsignaled=0
 
